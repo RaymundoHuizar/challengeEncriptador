@@ -1,0 +1,168 @@
+header.left #headerImage,
+header.right #headerImage {
+    float: left; 
+    margin-left: 20px; 
+    margin-top: 20px;  
+}
+
+#headerImage {
+    width: 150px; 
+    height: auto; 
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ccc;
+}
+
+.input-section, .output-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 45%;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden; 
+    box-sizing: border-box; 
+}
+
+#outputMessage {
+    word-wrap: break-word;
+    overflow-wrap: break-word; 
+    overflow-y: auto; 
+    max-height: 250px; 
+    width: 100%; 
+    padding: 10px; 
+    box-sizing: border-box; 
+    text-align: left; 
+    background-color: #f9f9f9; 
+    border: 1px solid #ddd; 
+}
+
+
+.input-section {
+    background-color: #f0f4f8;
+}
+
+
+
+
+textarea {
+    width: 100%;
+    height: 150px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+.buttons {
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    
+
+}
+
+button {
+    width: fixed 328px;
+    height: hug 67px;
+    padding: 24px;
+    gap: 8px;
+    border-radius: 24px;
+    border: 1px;
+    opacity: 0px;
+    
+}
+
+#encriptarBtn {
+    background-color: #0a84ff;
+    color: white;
+}
+
+#desencriptarBtn {
+    background-color: #cfd8dc;
+}
+
+.note {
+    font-size: 14px;
+    color: #666;
+    margin-top: 10px;
+}
+
+.output-section {
+    text-align: center;
+    background-color: #ffffff;
+    padding: 20px;
+}
+
+#outputMessage {
+
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+#outputImage {
+    display: block;
+    width: 200px;
+    margin-bottom: 10px;
+}
+
+#copiarBtn {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .input-section, .output-section {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}

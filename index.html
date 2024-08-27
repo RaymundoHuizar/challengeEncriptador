@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de Texto</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="left">
+        <a href="https://www.aluracursos.com" target="_blank">
+            <img src="./imagenes/imagenalura.png" alt="Icono de enlace" id="headerImage">
+        </a>
+    </header>
+    <div class="container">
+        <div class="input-section">
+        
+            <textarea id="textInput" placeholder="Ingrese el texto aquí"></textarea>
+            <p class="note">Solo letras minúsculas y sin acentos</p>
+            <div class="buttons">
+                <button id="encriptarBtn">Encriptar</button>
+                <button id="desencriptarBtn">Desencriptar</button>
+            </div>
+        </div>
+        <div class="output-section">
+            <img id="outputImage" src="./imagenes/Muñeco.png" alt="Imagen de alerta">
+            <p id="outputMessage">Ningún mensaje fue encontrado</p>
+            <button id="copiarBtn">Copiar</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy;Desarrollado por  R.Huizar - Alura Challenge</p>
+        
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
